@@ -39,12 +39,12 @@ export class UserComponent {
             this.showHobbies = true;
     }
 
-    addHobby(hobby){
+    addHobby(hobby:string){
         console.log(hobby);
         this.hobbies.push(hobby);
     }
 
-    deleteHobby(i){
+    deleteHobby(i:number){
         this.hobbies.splice(i,1);
     }
 }
